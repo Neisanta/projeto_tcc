@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Registro</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQ/g0x676GWrgnWmHIGU2Y7kOG2+Cc/K8HiC7E96tN3DM9HpsnlFzJ+76" crossorigin="anonymous">
+  <link rel="stylesheet" href="poslogin.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registro</h1>
+    <form action="/submit" method="post">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome:</label>
+        <input type="text" class="form-control" id="nome" name="nome" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="serie" class="form-label">Série favorita:</label>
+        <select class="form-select" id="serie" name="serie" required>
+          <option value="">Selecione...</option>
+          <option value="stranger_things">Stranger Things</option>
+          <option value="the_crown">The Crown</option>
+          <option value="bridgerton">Bridgerton</option>
+          <option value="umbrella_academy">The Umbrella Academy</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="serie" class="form-label">Passa tempo predileto:</label>
+        <select class="form-select" id="serie" name="passatempo" required>
+          <option value="">Selecione...</option>
+          <option value="jogar_bola">Jogar Bola</option>
+          <option value="jogar_video_game">Jogar Video Game</option>
+          <option value="assistir_serie">Assistir Série</option>
+          <option value="ler">Ler</option>
+          <option value="jogar_sinuca">Jogar Sinuca</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="musica" class="form-label">Tipo de música favorita:</label>
+        <select class="form-select" id="musica" name="musica" required>
+          <option value="">Selecione...</option>
+          <option value="pop">Pop</option>
+          <option value="rock">Rock</option>
+          <option value="mpb">MPB</option>
+          <option value="sertanejo">Sertanejo</option>
+        </select>
+      </div>
+        <div class="mb-3">
+          <button type="submit" class="enviar">Enviar</button>
+        </div>
+    </form>
+  </div>
+</body>
+</html>
